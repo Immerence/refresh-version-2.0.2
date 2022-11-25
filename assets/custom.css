@@ -137,6 +137,7 @@ header .header__icons .disclosure .img-icon svg {
         opacity: 1;
         color: #000;
         font-weight: 600;
+        text-decoration: underline;
     }
   
     header .menu-drawer-container .menu-drawer__navigation {
