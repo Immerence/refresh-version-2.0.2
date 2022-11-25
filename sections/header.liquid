@@ -522,77 +522,33 @@
     {%- endif -%}
 
     <div class="header__icons">
-{%- form 'localization', class: 'selectors-form' -%}
-                                {%- if currency_selector -%}
-                                    <div class="selectors-form__item">
-                                        <h2 class="visually-hidden" id="currency-heading">
-                                            {{ 'general.currency.dropdown_label' | t }}
-                                        </h2>
-
-                                        <div class="disclosure" data-disclosure-currency>
-                                            <button type="button" class="disclosure__toggle" aria-expanded="false"
-                                                    aria-controls="currency-list" aria-describedby="currency-heading"
-                                                    data-disclosure-toggle>
-                                                {{ form.current_currency.iso_code }} {%- if form.current_currency.symbol -%}{{ form.current_currency.symbol }}{%- endif -%}
-                                                <span class="fa fa-angle-down"></span>
-                                            </button>
-                                            <ul id="currency-list" class="disclosure-list" data-disclosure-list>
-                                                {% for currency in form.available_currencies %}
-                                                    <li class=" {% if currency.iso_code == form.current_currency.iso_code %}disclosure-list__item--current{% endif %}">
-                                                        <a class="disclosure-list__option" href="#"
-                                                           {% if currency.iso_code == form.current_currency.iso_code %}aria-current="true"{% endif %}
-                                                           data-value="{{ currency.iso_code }}" data-disclosure-option>
-                                                            {%- if currency.symbol -%}{{ currency.symbol }} {%- endif -%}{{ currency.name }}
-                                                        </a>
-                                                    </li>
-                                                {%- endfor -%}
-                                            </ul>
-                                            <input type="hidden" name="currency_code" id="CurrencySelector"
-                                                   value="{{ form.current_currency.iso_code }}" data-disclosure-input/>
-                                        </div>
-                                    </div>
-                                {%- endif -%}
-
-                                {%- if locale_selector -%}
-                                    <div class="selectors-form__item">
-                                        <h2 class="visually-hidden" id="lang-heading">
-                                            {{ 'general.language.dropdown_label' | t }}
-                                        </h2>
-
-                                        <div class="disclosure" data-disclosure-locale>
-                                            <button type="button" class="disclosure__toggle" aria-expanded="false"
-                                                    aria-controls="lang-list"
-                                                    aria-describedby="lang-heading" data-disclosure-toggle>
-
-                                                <img class="img-flag"
-                                                     src="{{ form.current_locale.iso_code | append: '.png' | asset_url }}">
-                                                <span>{{ form.current_locale.endonym_name }}</span>
-
-                                                <span class="fa fa-angle-down"></span>
-                                            </button>
-
-                                            <ul id="lang-list" class="disclosure-list" data-disclosure-list>
-                                                {% for locale in form.available_locales %}
-                                                    <li class=" {% if locale.iso_code == form.current_locale.iso_code %}disclosure-list__item--current{% endif %}"
-                                                        data-locale_url="{{ locale.root_url }}">
-                                                        <a class="disclosure-list__option" href="#"
-                                                           lang="{{ locale.iso_code }}"
-                                                           {% if locale.iso_code == form.current_locale.iso_code %}aria-current="true"{% endif %}
-                                                           data-value="{{ locale.iso_code }}" data-disclosure-option>
-                                                            <img class="img-flag"
-                                                                 src="{{ locale.iso_code | append: '.png' | asset_url }}">
-                                                            {{ locale.endonym_name }}
-                                                        </a>
-                                                    </li>
-                                                {%- endfor -%}
-                                            </ul>
-                                            <input type="hidden" name="locale_code" id="LocaleSelector"
-                                                   value="{{ form.current_locale.iso_code }}" data-disclosure-input/>
-                                        </div>
-                                    </div>
-                                {%- endif -%}
-
-                            {%- endform -%}
+      {% if localization.available_countries.size > 1 %}
+        <localization-form>
+          {% form 'localization' %}
+            <div class="disclosure">
+              <button type="button" class="disclosure__button" aria-expanded="false" aria-controls="CountryList">
+                {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
+      
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                </svg>
+              </button>
+      
+              <ul id="CountryList" role="list" class="disclosure__list" hidden>
+                {% for country in localization.available_countries %}
+                  <li class="disclosure__item" tabindex="-1">
+                    <a href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
+                      {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+      
+              <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
+            </div>
+          {% endform %}
+        </localization-form>
+      {% endif %}
       
       <details-modal class="header__search">
         <details>
