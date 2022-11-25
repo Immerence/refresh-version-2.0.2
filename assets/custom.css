@@ -104,7 +104,11 @@ header .header__icons .disclosure .disclosure__list a {
 header .header__icons .disclosure .img-icon img {
     width: 55px;
     height: 20px;
-   
+}
+
+header .header__icons .disclosure .img-icon svg {
+    width: 55px;
+    height: 20px;      
 }
 
 
