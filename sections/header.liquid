@@ -523,13 +523,14 @@
 
     <div class="header__icons">
         {% form 'currency' %}
-          {% assign currency_iso = currency.iso_code %}
+          
           <ul class="items">
               {% for currency in shop.enabled_currencies %}
+                {% assign currency_iso = currency.iso_code %}
               {% if currency == cart.currency %}
                 <li class="selected" data="{{ currency.iso_code }}" >{% render 'icon_currency', currency_iso: currency_iso %}</option>
                 {% else %}
-                <li>{% render 'icon_currency', currency_iso: currency_iso %}</option>
+                <li>{% render 'icon_currency', currency_iso: currency_iso %}</li>
               {% endif %}
             {% endfor %}
           </ul>
