@@ -994,3 +994,12 @@ class LocalizationForm extends HTMLElement {
   }
 }
 customElements.define('localization-form', LocalizationForm);
+
+document.getElementById('button-change-language').onclick = function() {
+
+    var className = ' ' + myButton.className + ' ';
+
+    this.className = ~className.indexOf(' active ') ?
+                         className.replace(' active ', ' ') :
+                         this.className + ' active';
+}
