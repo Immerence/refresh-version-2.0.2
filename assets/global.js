@@ -995,8 +995,10 @@ class LocalizationForm extends HTMLElement {
 }
 customElements.define('localization-form', LocalizationForm);
 
-var buttonChangeMobile = document.getElementById("button-change-language");
-  buttonChangeMobile.onclick = function(event) {
+var buttonChangeMobile = document.getElementsByClassName("disclosure__button_mobile");
+
+for (var i = 0; i < buttonChangeMobile.length; i++) {
+  buttonChangeMobile[i].onclick = function(event) {
     this.classList.toggle('active');
-  
+  }
 }
