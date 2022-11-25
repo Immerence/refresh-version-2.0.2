@@ -556,7 +556,7 @@
       {% if localization.available_countries.size > 1 %}
         <localization-form>
           {% form 'localization' %}
-            <div class="disclosure">
+            <div class="disclosure desktop">
               <button type="button" class="disclosure__button" aria-expanded="false" aria-controls="CountryList">
                 
                 {% assign currency_iso = localization.country.iso_code %}
