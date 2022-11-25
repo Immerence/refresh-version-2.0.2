@@ -73,6 +73,7 @@ header .header__inline-menu .list-menu .header__menu-item {
     header .header__inline-menu .list-menu > li > header-menu .header__menu-item {
         padding-right: 25px;
     }
+  
     header .header__inline-menu .list-menu > li > header-menu .icon-caret {
         margin-top: 1px;
     }
@@ -82,6 +83,7 @@ header .header__inline-menu .list-menu .header__menu-item {
     header .menu-drawer-container .list-menu__item {
         color: #1E1E1E;
     }
+  
     header .menu-drawer-container .menu-drawer__menu-item--active,
     header .menu-drawer-container .menu-drawer__menu-item:focus,
     header .menu-drawer-container .menu-drawer__close-button:focus,
@@ -92,38 +94,49 @@ header .header__inline-menu .list-menu .header__menu-item {
         color: #000;
         font-weight: 600;
     }
+  
     header .menu-drawer-container .menu-drawer__navigation {
         padding: 20px 0;
         border-top: 1px solid #E1E1E1;
     }
+  
     header .menu-drawer-container .menu-drawer__navigation > .menu-drawer__menu > li {
         border-bottom: 1px solid #f2f2f2;
     }
+  
     header .menu-drawer-container .menu-drawer__navigation .submenu-open {
         visibility: visible;
     }
+  
     header .menu-drawer-container .menu-drawer__inner-submenu button {
         display: none;
     }
+  
     header .menu-drawer-container .menu-drawer__menu.has-submenu summary .icon.icon-arrow {
         display: none;
     }
+  
     header .menu-drawer-container .menu-drawer__menu.has-submenu summary .icon-caret {
         display: block;
     }
+  
     header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-opening[open] > summary .icon-caret {
         transform: rotate(180deg);
     }
+  
     header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-opening > .menu-drawer__submenu {
         padding-left: 30px;
     }
+  
     header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-opening > .menu-drawer__submenu > .menu-drawer__menu {
         margin-left: 25px;
         border-left: 1px solid #2222229e;
     }
+  
     header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-opening > .menu-drawer__submenu > .menu-drawer__menu a {
         padding-left: 15px;
     }
+  
     header .menu-drawer-container .menu-drawer__submenu {
         position: relative;
         top: auto;
