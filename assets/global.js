@@ -1003,7 +1003,7 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
   }
 }
 let buttonMenuMobile = document.getElementById("Details-menu-drawer-container");
-let checkCurrentPage = document.getElementsByClassName("menu-drawer__menu-item--active");
+let checkCurrentPage = document.querySelectorAll("a.menu-drawer__menu-item--active");
 
 buttonMenuMobile.onclick = function(event) {
   console.log(checkCurrentPage);
