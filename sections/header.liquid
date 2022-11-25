@@ -528,7 +528,7 @@
             <div class="disclosure">
               <button type="button" class="disclosure__button" aria-expanded="false" aria-controls="CountryList">
                 
-                {% assign currency_iso = localization.country.currency.iso_code %}
+                {% assign currency_iso = localization.country.iso_code %}
                 {% render 'icon_currency', currency_iso: currency_iso %}
                 {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
                 <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
@@ -540,7 +540,7 @@
                 {% for country in localization.available_countries %}
                   <li class="disclosure__item" tabindex="-1">
                     <a href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
-                      {% assign currency_iso = country.currency.iso_code %}
+                      {% assign currency_iso = country.iso_code %}
                       {% render 'icon_currency', currency_iso: currency_iso %}
                       {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
                     </a>
