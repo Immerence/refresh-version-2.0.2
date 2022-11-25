@@ -1007,8 +1007,8 @@ let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active"
 
 buttonMenuMobile.onclick = function(event) {
   console.log(checkCurrentPage);
-    checkCurrentPage.closest('details').closest('details > summary').click();
-  
+    checkCurrentPage.closest('details').closest('details > summary').setAttribute("aria-expanded", "true");
+    checkCurrentPage.closest('details').closest('details ').setAttribute("open", "");
 
 }
 
