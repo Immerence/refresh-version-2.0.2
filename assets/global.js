@@ -1002,9 +1002,12 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
     this.classList.toggle('active');
   }
 }
-
+let buttonMenuMobile = document.getElementById("Details-menu-drawer-container");
 let checkCurrentPage = document.getElementsByClassName("menu-drawer__menu-item--active");
 
-for (let i = 0; i < checkCurrentPage.length; i++ ) {
-  checkCurrentPage.closest('details').setAttribute("open", "");
+buttonMenuMobile.onclick = function(event) {
+  for (let i = 0; i < checkCurrentPage.length; i++ ) {
+    checkCurrentPage.closest('details').setAttribute("open", "");
+  }
 }
+
