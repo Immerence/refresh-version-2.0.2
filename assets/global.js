@@ -1008,6 +1008,6 @@ let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active"
 buttonMenuMobile.onclick = function(event) {
   console.log(checkCurrentPage);
   checkCurrentPage.closest('details').click();
-  checkCurrentPage.closest('details')closest('details').click()
+  checkCurrentPage.closest('details').closest('details').click()
 }
 
