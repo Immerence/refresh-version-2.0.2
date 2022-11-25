@@ -39,7 +39,7 @@ header .mega-menu__list > li > ul > li > a {
     align-items: center;
     color: #000000;
 }
-header .mega-menu__list li:first-child .list-unstyled {
+header .mega-menu__list li ul.two-column.list-unstyled {
     -moz-column-count: 2;
     -moz-column-gap: 20px;
     -webkit-column-count: 2;
@@ -47,10 +47,7 @@ header .mega-menu__list li:first-child .list-unstyled {
     column-count: 2;
     column-gap: 40px;
 }
-header .mega-menu__list li:first-child .list-unstyled li:nth-child(5) {
-    -webkit-column-break-after: always;
-    break-after: always;
-}
+
 
 @media (max-width: 989px) {
     header .menu-drawer-container .list-menu__item {
