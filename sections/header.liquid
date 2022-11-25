@@ -296,7 +296,7 @@
         <localization-form>
           {% form 'localization' %}
             <div class="disclosure mobile">
-              <div id="button-change-language" type="button" class="disclosure__button ">
+              <div id="button-change-language" type="button" class="disclosure__button  disclosure__button_mobile">
                 <p>SELECT COUNTRY</p>
                 {% assign currency_iso = localization.country.iso_code %}
                 {% render 'icon_currency', currency_iso: currency_iso %}
