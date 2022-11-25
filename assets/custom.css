@@ -2,12 +2,15 @@ header .header-wrapper.header-wrapper--border-bottom {
     border-bottom: 1px solid #E1E1E1;
     box-shadow: none;
 }
+
 header .header__inline-menu .list-menu .mega-menu__content {
     border-top: 1px solid #E1E1E1;
 }
+
 header .header__inline-menu .list-menu .header__menu-item {
     text-decoration-thickness: inherit !important;
 }
+
 header .header__inline-menu .list-menu .header__menu-item span {
     font-weight: 400;
     font-size: 14px;
@@ -17,13 +20,16 @@ header .header__inline-menu .list-menu .header__menu-item span {
     text-align: center;
     color: #1E1E1E;
 }
+
 header .header__inline-menu .list-menu .header__menu-item > .icon-caret {
     top: calc(50% - 4px);
 }
+
 header .mega-menu__list {
     display: flex;
     gap: 60px;
 }
+
 header .mega-menu__list .mega-menu__link--level-2 {
     font-weight: 700;
     font-size: 14px;
@@ -39,6 +45,7 @@ header .mega-menu__list > li > ul > li > a {
     align-items: center;
     color: #000000;
 }
+
 header .mega-menu__list li ul.two-column.list-unstyled {
     -moz-column-count: 2;
     -moz-column-gap: 20px;
@@ -48,6 +55,28 @@ header .mega-menu__list li ul.two-column.list-unstyled {
     column-gap: 40px;
 }
 
+header .mega-menu__list > li:not(:first-child) {
+    padding-left: 40px;
+    border-left: 1px solid #E1E1E1;
+}
+
+header .header__inline-menu .list-menu .header__menu-item {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.list-menu--inline {
+    column-gap: 26px;
+}
+
+@media (min-width: 900px) {
+    header .header__inline-menu .list-menu > li > header-menu .header__menu-item {
+        padding-right: 25px;
+    }
+    header .header__inline-menu .list-menu > li > header-menu .icon-caret {
+        margin-top: 1px;
+    }
+}
 
 @media (max-width: 989px) {
     header .menu-drawer-container .list-menu__item {
