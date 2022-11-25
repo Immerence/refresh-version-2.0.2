@@ -535,7 +535,7 @@
                 
                 {% for country in localization.available_countries %}
                   <li class="disclosure__item" tabindex="-1">
-                          {% assign currency_iso = currency.iso_code %}
+                          {% assign currency_iso = country.currency.iso_code %}
                           {% render 'icon_currency', currency_iso: currency_iso %}
                     <a href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
                       {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
