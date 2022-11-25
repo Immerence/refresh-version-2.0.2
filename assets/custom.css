@@ -75,6 +75,9 @@ header .header__icons .disclosure {
 header .header__icons .disclosure .disclosure__button {
     border: none;
 }
+header .header__icons .disclosure .disclosure__button[aria-expanded="true"] .icon {
+      transform: rotate(180deg);
+}
 header .header__icons .disclosure .disclosure__button .icon {
     width: 10px;
     margin-left: 10px;
