@@ -1003,13 +1003,10 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
   }
 }
 let buttonMenuMobile = document.getElementById("Details-menu-drawer-container");
-let checkCurrentPage = document.querySelectorAll("a.menu-drawer__menu-item--active");
+let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active");
 
 buttonMenuMobile.onclick = function(event) {
   console.log(checkCurrentPage);
-  for (let i = 0; i < checkCurrentPage.length; i++ ) {
-    checkCurrentPage[i].closest('details').click();
-    checkCurrentPage[i].closest('details').closest('details').click();
-  }
+  checkCurrentPage.closest('details').classList.add('open');
 }
 
