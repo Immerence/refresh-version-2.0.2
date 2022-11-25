@@ -1002,7 +1002,7 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
     this.classList.toggle('active');
   }
 }
-let buttonMenuMobile = document.getElementById("Details-menu-drawer-container");
+let buttonMenuMobile = document.querySelector("#Details-menu-drawer-container .header__icon");
 let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active");
 
 buttonMenuMobile.onclick = function(event) {
