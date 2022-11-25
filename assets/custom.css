@@ -30,6 +30,10 @@ header .mega-menu__list {
     gap: 60px;
 }
 
+header .mega-menu .mega-menu__list--condensed {
+    display: flex;
+}
+
 header .mega-menu__list .mega-menu__link--level-2 {
     font-weight: 700;
     font-size: 14px;
