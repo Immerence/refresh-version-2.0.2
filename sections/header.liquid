@@ -527,7 +527,7 @@
           <ul class="items">
               {% for currency in shop.enabled_currencies %}
               {% if currency == cart.currency %}
-                <li selected="true">{% render 'icon_currency', currency_iso: currency_iso %}</option>
+                <li class="selected" >{% render 'icon_currency', currency_iso: currency_iso %}</option>
                 {% else %}
                 <li>{% render 'icon_currency', currency_iso: currency_iso %}</option>
               {% endif %}
