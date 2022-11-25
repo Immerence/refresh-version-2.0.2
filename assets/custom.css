@@ -101,6 +101,13 @@ header .header__icons .disclosure .disclosure__list a {
     text-decoration: none;
 }
 
+header .header__icons .disclosure .img-icon img {
+    width: 55px;
+    height: 20px;
+   
+}
+
+
 
 @media (min-width: 900px) {
     header .header__inline-menu .list-menu > li > header-menu .header__menu-item {
