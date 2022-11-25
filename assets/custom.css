@@ -29,6 +29,7 @@ header .mega-menu__list .mega-menu__link--level-2 {
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    text-transform: uppercase;
 }
 header .mega-menu__list > li > ul > li > a {
     font-weight: 400;
