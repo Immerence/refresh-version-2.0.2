@@ -995,10 +995,16 @@ class LocalizationForm extends HTMLElement {
 }
 customElements.define('localization-form', LocalizationForm);
 
-var buttonChangeMobile = document.getElementsByClassName("disclosure__button_mobile");
+let buttonChangeMobile = document.getElementsByClassName("disclosure__button_mobile");
 
-for (var i = 0; i < buttonChangeMobile.length; i++) {
+for (let i = 0; i < buttonChangeMobile.length; i++) {
   buttonChangeMobile[i].onclick = function(event) {
     this.classList.toggle('active');
   }
+}
+
+let checkCurrentPage = document.getElementsByClassName("menu-drawer__menu-item--active");
+
+for (let i = 0; i < checkCurrentPage.length; i++ ) {
+  checkCurrentPage.closest('details').setAttribute("open", "");
 }
