@@ -124,13 +124,18 @@ header .header__icons .disclosure .img-icon svg {
 }
 
 @media (max-width: 989px) {
+
+    .disclosure.desktop {
+      display: none;
+    }
+  
     header .menu-drawer-container .list-menu__item {
         color: #1E1E1E;
     }
 
-  header .menu-drawer__utility-links {
+    header .menu-drawer__utility-links {
         background: transparent;
-  }
+    }
   
     header .menu-drawer-container .menu-drawer__menu-item--active,
     header .menu-drawer-container .menu-drawer__menu-item:focus,
