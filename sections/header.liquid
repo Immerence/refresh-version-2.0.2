@@ -539,13 +539,9 @@
           {%- for currency in form.available_currencies -%}
             <li class="disclosure-list__item{% if currency.iso_code == form.current_currency.iso_code %} disclosure-list__item--current{% endif %}">
               <a class="disclosure-list__option" href="#"{% if currency.iso_code == form.current_currency.iso_code %} aria-current="true"{% endif %} data-value="{{ currency.iso_code }}" data-disclosure-option>
-                {%- if show_currency_flags -%}
-                  <span class="currency-flag" data-flag="{{ currency.iso_code }}" aria-hidden="true"></span>
-                {%- endif -%}
+                {% assign currency_iso = currency.iso_code %}
+{% render 'icon_currency', currency_iso: currency_iso %}
 
-                <span class="disclosure-list__label">
-                  {{ currency.iso_code }} {%- if currency.symbol -%}{{ currency.symbol }}{%- endif -%}
-                </span>
               </a>
             </li>
           {%- endfor -%}
