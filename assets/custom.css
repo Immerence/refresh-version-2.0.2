@@ -69,6 +69,32 @@ header .header__inline-menu .list-menu .header__menu-item {
     column-gap: 26px;
 }
 
+header .header__icons .disclosure {
+    position: relative;
+}
+header .header__icons .disclosure .disclosure__button {
+    border: none;
+}
+header .header__icons .disclosure .disclosure__button .icon {
+    width: 10px;
+    margin-left: 10px;
+}
+header .header__icons .disclosure .disclosure__list {
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    padding: 10px 0 10px 15px;
+    margin: 0;
+    background: #fff;
+    width: 100%;
+    min-height: auto;
+}
+header .header__icons .disclosure .disclosure__list a {
+    color: #222;
+    text-decoration: none;
+}
+
+
 @media (min-width: 900px) {
     header .header__inline-menu .list-menu > li > header-menu .header__menu-item {
         padding-right: 25px;
