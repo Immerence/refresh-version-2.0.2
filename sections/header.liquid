@@ -513,8 +513,8 @@
                                       header .mega-menu__list li .two-column.list-unstyled li:nth-child({{ section.settings.max_length_items }}n) {
                                           -webkit-column-break-after: always;
                                           break-after: always;
-                                    top: {{ childlink.links.size }};
-                                bottom: {{number_column_check_two }};
+                                   
+                                
                                       }
                                   
                                       header .mega-menu__list li ul.two-column.list-unstyled {
@@ -524,7 +524,9 @@
                                         -webkit-column-gap: 20px;
                                         column-count: {{ section.settings.number_columns_items }};
                                         column-gap: 40px;
+                                         top: {{ childlink.links.size }};
                                 bottom: {{ number_column_check_two }};
+                                      top: {{ section.settings.max_length_items }};
                                       }
                                     }
                                 </style>
