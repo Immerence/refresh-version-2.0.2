@@ -500,7 +500,24 @@
                               </a>
                               {%- if childlink.links != blank -%}
                                 <ul class="list-unstyled {% if childlink.links.size > section.settings.max_length_items %} two-column {% endif %}" role="list" data-number="{{ childlink.links.size }}">
-                                
+                                <style>
+                                  @media(min-width:900px) {
+                                      header .mega-menu__list li .two-column.list-unstyled li:nth-child({{ section.settings.max_length_items }}n) {
+                                          -webkit-column-break-after: always;
+                                          break-after: always;
+                                    top: {{ childlink.links.size }};
+                                      }
+                                  
+                                      header .mega-menu__list li ul.two-column.list-unstyled {
+                                        -moz-column-count: {{ section.settings.number_columns_items }};
+                                        -moz-column-gap: 20px;
+                                        -webkit-column-count: {{ section.settings.number_columns_items }};
+                                        -webkit-column-gap: 20px;
+                                        column-count: {{ section.settings.number_columns_items }};
+                                        column-gap: 40px;
+                                      }
+                                    }
+                                </style>
                                   {%- for grandchildlink in childlink.links -%}
                                     <li>
                                       <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
