@@ -126,10 +126,10 @@ header .header__icons .disclosure .img-icon svg {
     .header__icons {
         align-items: center;
     }
-    header .header__inline-menu .list-menu .header__menu-item header .list-menu--inline > li > header-menu .mega-menu__content {
+         header .list-menu--inline > li > header-menu .mega-menu__content {
         opacity: 0;
         transform: none;
-          visibility: hidden !important;
+          visibility: hidden;
     }
     header .list-menu--inline > li > header-menu .header__menu-item {
         position: static;
