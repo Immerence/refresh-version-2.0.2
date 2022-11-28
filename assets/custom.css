@@ -87,11 +87,12 @@ header .header__icons .disclosure .disclosure__list {
     position: absolute;
     top: 100%;
     list-style: none;
-    padding: 10px 0 10px 15px;
+    padding: 20px 0 10px 0;
     margin: 0;
     background: #fff;
     width: 100%;
     min-height: auto;
+    overflow: visible;
 }
 header .header__icons .disclosure .disclosure__list a {
     color: #222;
