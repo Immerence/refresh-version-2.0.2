@@ -87,7 +87,7 @@ header .header__icons .disclosure .disclosure__list {
     position: absolute;
     top: 100%;
     list-style: none;
-    padding: 20px 0 10px 0;
+    padding: 20px 5px 10px 5px;
     margin: 0;
     background: #fff;
     width: 100%;
