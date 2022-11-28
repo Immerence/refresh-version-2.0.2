@@ -500,6 +500,13 @@
                               </a>
                               {%- if childlink.links != blank -%}
                                 <ul class="list-unstyled {% if childlink.links.size > section.settings.max_length_items %} two-column {% endif %}" role="list" data-number="{{ childlink.links.size }}">
+                                {% liquid
+                                    assign total_item = childlink.links.size
+                                  assign max_number_item = section.settings.max_length_items
+                                assign number_column_check = childlink.links.size | divided_by: section.settings.max_length_items
+                                
+                                %}
+                                
                                 <style>
                                   @media(min-width:900px) {
                                       header .mega-menu__list li .two-column.list-unstyled li:nth-child({{ section.settings.max_length_items }}n) {
@@ -509,7 +516,7 @@
                                       }
                                   
                                       header .mega-menu__list li ul.two-column.list-unstyled {
-                                        -moz-column-count: {{ section.settings.number_columns_items }};
+                                        -moz-column-count: {{ number_column_check }};
                                         -moz-column-gap: 20px;
                                         -webkit-column-count: {{ section.settings.number_columns_items }};
                                         -webkit-column-gap: 20px;
