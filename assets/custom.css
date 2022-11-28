@@ -117,7 +117,7 @@ header .header__icons .disclosure .img-icon svg {
 
 @media (min-width: 900px) {
     .header {
-        padding-bottom: 0;
+          padding-bottom: 0 !important;
     }
     .header__heading-link {
         padding-bottom: 17px;
