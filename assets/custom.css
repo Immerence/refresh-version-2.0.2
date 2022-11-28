@@ -97,6 +97,9 @@ header .header__icons .disclosure .disclosure__list {
 header .header__icons .disclosure .disclosure__list a {
     color: #222;
     text-decoration: none;
+    display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 header .header__icons .disclosure .img-icon img {
