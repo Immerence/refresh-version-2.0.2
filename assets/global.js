@@ -1007,8 +1007,10 @@ let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active"
 
 buttonMenuMobile.onclick = function(event) {
   console.log(checkCurrentPage);
-
-      checkCurrentPage.parents('details').classList.add("menu-opening");
-    checkCurrentPage.parents('details').setAttribute("open", "");
+    checkCurrentPage.closest('details').classList.add("menu-opening");
+    checkCurrentPage.closest('details').setAttribute("open", "");
+  
+      checkCurrentPage.closest('details').parents('').closest('details').classList.add("menu-opening");
+    checkCurrentPage.closest('details').parents('').closest('details').setAttribute("open", "");
 }
 
