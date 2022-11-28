@@ -19,6 +19,7 @@ header .header__inline-menu .list-menu .header__menu-item span {
     align-items: center;
     text-align: center;
     color: #1E1E1E;
+    text-transform: uppercase;
 }
 
 header .header__inline-menu .list-menu .header__menu-item > .icon-caret {
