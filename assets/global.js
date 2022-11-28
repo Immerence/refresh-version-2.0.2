@@ -1006,31 +1006,22 @@ let buttonMenuMobile = document.querySelector("#Details-menu-drawer-container .h
 let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active");
 
 buttonMenuMobile.onclick = function(event) {
-  console.log(checkCurrentPage);
+  
+  if(checkCurrentPage.closest('details')) {
     checkCurrentPage.closest('details').classList.add("menu-opening");
     checkCurrentPage.closest('details').setAttribute("open", "");
+  }
+    
 
 if (checkCurrentPage.closest('#Details-menu-drawer-menu-item-1')) {
           checkCurrentPage.closest('#Details-menu-drawer-menu-item-1').classList.add("menu-opening");
     checkCurrentPage.closest('#Details-menu-drawer-menu-item-1').setAttribute("open", "");
-} else {
-  
 }
 
   if(checkCurrentPage.closest('#Details-menu-drawer-menu-item-2')) {
             checkCurrentPage.closest('#Details-menu-drawer-menu-item-2').classList.add("menu-opening");
     checkCurrentPage.closest('#Details-menu-drawer-menu-item-2').setAttribute("open", "");
-  } else {
-    
   }
-
   
-
-
-
-  
-
-  
-
 }
 
