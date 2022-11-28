@@ -186,7 +186,7 @@
                                               {% render 'icon-arrow' %}
                                               {{ childlink.title | escape }}
                                             </button>
-                                            <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                            <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1" test="{{ childlink.links.sizes }}" >
                                               {%- for grandchildlink in childlink.links -%}
                                                 <li>
                                                   <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
