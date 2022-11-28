@@ -112,7 +112,7 @@ header .header__icons .disclosure .img-icon svg {
 
 @media (min-width: 900px) {
     header .header__inline-menu .list-menu > li > header-menu .header__menu-item {
-        padding-right: 25px;
+        
     }
   
     header .header__inline-menu .list-menu > li > header-menu .icon-caret {
