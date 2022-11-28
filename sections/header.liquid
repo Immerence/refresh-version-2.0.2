@@ -504,7 +504,7 @@
                                     assign total_item = childlink.links.size
                                   assign max_number_item = section.settings.max_length_items
                                 assign number_column_check = childlink.links.size | divided_by: section.settings.max_length_items
-                                assign number_column_check_two = childlink.links.size | divided_by: section.settings.max_length_items | ceil
+                                assign number_column_check_two = childlink.links.size | modulo: section.settings.max_length_items
                                 
                                 %}
                                 
