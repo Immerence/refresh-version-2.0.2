@@ -501,6 +501,7 @@
                               {%- if childlink.links != blank -%}
                                 <ul class="list-unstyled {% if childlink.links.size > section.settings.max_length_items %} two-column {% endif %}" role="list" data-number="{{ childlink.links.size }}">
                                 {% liquid
+                                  if childlink.links.size > section.settings.max_length_items
                                     assign total_item = childlink.links.size
                                   assign max_number_item = section.settings.max_length_items
                                   assign number_column_check_one = childlink.links.size | divided_by: section.settings.max_length_items 
@@ -510,6 +511,7 @@
                                    assign number_column_check = number_column_check_one | plus: 1
                                   else 
                                   assign number_column_check = number_column_check_one
+                                endif
                                 endif
                                 %}
                                 
