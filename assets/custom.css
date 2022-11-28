@@ -50,14 +50,6 @@ header .mega-menu__list > li > ul > li > a {
     color: #000000;
 }
 
-header .mega-menu__list li ul.two-column.list-unstyled {
-    -moz-column-count: 2;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 20px;
-    column-count: 2;
-    column-gap: 40px;
-}
 
 header .mega-menu__list > li:not(:first-child) {
     padding-left: 40px;
