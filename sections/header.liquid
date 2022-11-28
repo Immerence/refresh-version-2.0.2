@@ -503,9 +503,14 @@
                                 {% liquid
                                     assign total_item = childlink.links.size
                                   assign max_number_item = section.settings.max_length_items
-                                assign number_column_check = childlink.links.size | divided_by: section.settings.max_length_items
-                                assign number_column_check_two = childlink.links.size | modulo: section.settings.max_length_items
+                                  assign number_column_check_one = childlink.links.size | divided_by: section.settings.max_length_items 
                                 
+                                assign number_column_check_two = childlink.links.size | modulo: section.settings.max_length_items
+                                  if number_column_check_two > 0
+                                   assign number_column_check = number_column_check_one | plus: 1
+                                  else 
+                                  assign number_column_check = number_column_check_one
+                                endif
                                 %}
                                 
                                 <style>
@@ -513,16 +518,14 @@
                                       header .mega-menu__list li .two-column.list-unstyled li:nth-of-type({{ section.settings.max_length_items }}n) {
                                           -webkit-column-break-after: always;
                                           break-after: always;
-                                   
-                                
                                       }
                                   
                                       header .mega-menu__list li ul.two-column.list-unstyled {
                                         -moz-column-count: {{ number_column_check }};
                                         -moz-column-gap: 20px;
-                                        -webkit-column-count: {{ section.settings.number_columns_items }};
+                                        -webkit-column-count: {{ number_column_check }};
                                         -webkit-column-gap: 20px;
-                                        column-count: {{ section.settings.number_columns_items }};
+                                        column-count: {{ number_column_check }};
                                         column-gap: 40px;
                                          top: {{ childlink.links.size }};
                                 bottom: {{ number_column_check_two }};
@@ -954,12 +957,6 @@
       "default": "dropdown",
       "label": "t:sections.header.settings.menu_type_desktop.label",
       "info": "t:sections.header.settings.menu_type_desktop.info"
-    },
-        {
-      "type": "number",
-      "id": "number_columns_items",
-      "label": "Column Number",
-      "default": 3
     },
     {
       "type": "number",
