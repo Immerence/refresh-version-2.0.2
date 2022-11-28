@@ -607,7 +607,8 @@
                     <a href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
                       {% assign currency_iso = country.iso_code %}
                       {% render 'icon_currency', currency_iso: currency_iso %}
-                      {% comment %}{{ country.name }} {{ country.iso_code }} ({{ country.currency.iso_code }} {{ country.currency.symbol }}) {% endcomment %}
+                  <span class="country-name">{{ country.name }}</span>
+                      {% comment %} {{ country.iso_code }} ({{ country.currency.iso_code }} {{ country.currency.symbol }}) {% endcomment %}
                     </a>
                   </li>
                 {% endfor %}
