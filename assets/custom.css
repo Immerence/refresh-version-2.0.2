@@ -129,7 +129,7 @@ header .header__icons .disclosure .img-icon svg {
     header .header__inline-menu .list-menu .header__menu-item header .list-menu--inline > li > header-menu .mega-menu__content {
         opacity: 0;
         transform: none;
-        visibility: hidden;
+          visibility: hidden !important;
     }
     header .list-menu--inline > li > header-menu .header__menu-item {
         position: static;
