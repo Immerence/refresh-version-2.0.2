@@ -1008,7 +1008,7 @@ let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active"
 buttonMenuMobile.onclick = function(event) {
   console.log(checkCurrentPage);
 
-if(checkCurrentPage.closest('#Details-menu-drawer-submenu-1').length){
+if(checkCurrentPage.closest('#Details-menu-drawer-menu-item-1').length){
       checkCurrentPage.closest('#Details-menu-drawer-submenu-1').classList.add("menu-opening");
     checkCurrentPage.closest('#Details-menu-drawer-submenu-1').setAttribute("open", "");
 
