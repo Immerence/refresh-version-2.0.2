@@ -121,6 +121,7 @@ header .header__icons .disclosure .img-icon svg {
     }
     .header__heading-link {
         padding-bottom: 17px;
+        padding-top: 14px;
     }
     .header__icons {
         align-items: center;
