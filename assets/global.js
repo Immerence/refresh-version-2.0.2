@@ -1013,7 +1013,7 @@ buttonMenuMobile.onclick = function(event) {
 
 
   
-console.log(checkCurrentPage.closest('#Details-menu-drawer-menu-item-2').length);
+
 
         checkCurrentPage.closest('#Details-menu-drawer-menu-item-2').classList.add("menu-opening");
     checkCurrentPage.closest('#Details-menu-drawer-menu-item-2').setAttribute("open", "");
