@@ -115,6 +115,32 @@ header .header__icons .disclosure .img-icon svg {
     }
 }
 
+@media (min-width: 900px) {
+    .header {
+        padding-bottom: 0;
+    }
+    .header__heading-link {
+        padding-bottom: 17px;
+    }
+    .header__icons {
+        align-items: center;
+    }
+    header .header__inline-menu .list-menu .header__menu-item header .list-menu--inline > li > header-menu .mega-menu__content {
+        opacity: 0;
+        transform: none;
+        visibility: hidden;
+    }
+    header .list-menu--inline > li > header-menu .header__menu-item {
+        position: static;
+    }
+    header .list-menu--inline > li > header-menu .header__menu-item:hover .mega-menu__content {
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+    }
+}
+
+
 @media (max-width: 989px) {
 
     .disclosure.desktop {
