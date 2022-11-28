@@ -1010,14 +1010,14 @@ buttonMenuMobile.onclick = function(event) {
     checkCurrentPage.closest('details').classList.add("menu-opening");
     checkCurrentPage.closest('details').setAttribute("open", "");
 
-if (checkCurrentPage.closest('#Details-menu-drawer-menu-item-1').length) {
+if (checkCurrentPage.closest('#Details-menu-drawer-menu-item-1')) {
           checkCurrentPage.closest('#Details-menu-drawer-menu-item-1').classList.add("menu-opening");
     checkCurrentPage.closest('#Details-menu-drawer-menu-item-1').setAttribute("open", "");
 } else {
   
 }
 
-  if(checkCurrentPage.closest('#Details-menu-drawer-menu-item-2').length) {
+  if(checkCurrentPage.closest('#Details-menu-drawer-menu-item-2')) {
             checkCurrentPage.closest('#Details-menu-drawer-menu-item-2').classList.add("menu-opening");
     checkCurrentPage.closest('#Details-menu-drawer-menu-item-2').setAttribute("open", "");
   } else {
