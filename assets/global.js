@@ -1009,5 +1009,7 @@ buttonMenuMobile.onclick = function(event) {
   console.log(checkCurrentPage);
     checkCurrentPage.closest('details').classList.add("menu-opening");
     checkCurrentPage.closest('details').setAttribute("open", "");
+      checkCurrentPage.closest('details').parent('details').classList.add("menu-opening");
+    checkCurrentPage.closest('details').parent('details').setAttribute("open", "");
 }
 
