@@ -986,4 +986,10 @@ buttonMenuMobile.onclick = function(event) {
 }
 
 
+let buttonMenuItem = document.querySelector(". menu-drawer__menu-item");
+let checkCurrentPages = document.querySelector("a.menu-drawer__menu-item--active");
 
+buttonMenuMobile.onclick = function(event) { 
+	this.classList.toggle('active');
+  this.parent().classList.toggle('active');
+}
