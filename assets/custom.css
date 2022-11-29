@@ -156,6 +156,7 @@ header .header__icons .disclosure .img-icon svg {
     header .header__icons .disclosure .disclosure__button + ul {
         top: 100%;
         margin-top: 8px;
+        border-top: 1px solid #E1E1E1;
     }
     
     header .header__icons {
