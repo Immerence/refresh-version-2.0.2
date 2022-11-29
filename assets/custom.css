@@ -160,7 +160,7 @@ header .header__icons .disclosure .img-icon svg {
         border: 1px solid #8080809e;
     }
     
-    header .header__icons {
+    header .header__icons.active-button {
         position: relative;
     }
 }
