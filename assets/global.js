@@ -970,8 +970,9 @@ let buttonMenuItemTwo = document.querySelector(".menu-mobile summary.menu-drawer
 let checkCurrentPages = document.querySelector("a.menu-drawer__menu-item--active");
 
 for (let i = 0; i < buttonMenuItems.length; i++) {
-  buttonMenuItems[i].onclick = function(event) {
+  buttonMenuItems[i].onclick = function(event) { 
     this.classList.toggle('active');
+                                                  this.nextSiblingslideToggle(); 
     this.parentElement.classList.toggle('active');
   }
 }
