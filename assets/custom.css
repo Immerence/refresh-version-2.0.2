@@ -126,6 +126,10 @@ header .header__icons .disclosure .img-icon svg {
     header .header__icons .disclosure .disclosure__button.active-desktop + ul {
       display: block;
     }
+
+    header .header__icons .disclosure .disclosure__button.active-desktop  .icon {
+        transform: rotate(180deg);
+    }
 }
 
 @media (min-width: 900px) {
