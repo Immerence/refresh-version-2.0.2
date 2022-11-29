@@ -962,28 +962,7 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
     this.classList.toggle('active');
   }
 }
-let buttonMenuMobile = document.querySelector("#Details-menu-drawer-container .header__icon");
-let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active");
 
-buttonMenuMobile.onclick = function(event) {
-  
-  if(checkCurrentPage.closest('details')) {
-    checkCurrentPage.closest('details').classList.add("menu-opening");
-    checkCurrentPage.closest('details').setAttribute("open", "");
-  }
-    
-
-  if (checkCurrentPage.closest('#Details-menu-drawer-menu-item-1')) {
-            checkCurrentPage.closest('#Details-menu-drawer-menu-item-1').classList.add("menu-opening");
-      checkCurrentPage.closest('#Details-menu-drawer-menu-item-1').setAttribute("open", "");
-  }
-
-  if(checkCurrentPage.closest('#Details-menu-drawer-menu-item-2')) {
-            checkCurrentPage.closest('#Details-menu-drawer-menu-item-2').classList.add("menu-opening");
-    checkCurrentPage.closest('#Details-menu-drawer-menu-item-2').setAttribute("open", "");
-  }
-  
-}
 
 
 let buttonMenuItem = document.querySelector(".menu-mobile summary.menu-drawer__menu-item");
