@@ -211,16 +211,7 @@ header .header__icons .disclosure .img-icon svg {
 
 
 @media (max-width: 989px) {
-  @keyframes animatemenu {
-  0%   {height: 0;
-    opacity: 0;}
-  100% {height: 100%;
-    opacity: 1;}
-}
-header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-opening > .menu-drawer__submenu {
-      animation-name: animatemenu;
-  animation-duration: 5s;
-}
+
   .header>.header__heading-link span {
       font-weight: 700;
       font-size: 24px;
