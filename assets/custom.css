@@ -122,6 +122,10 @@ header .header__icons .disclosure .img-icon svg {
     header .header__inline-menu .list-menu > li > header-menu .icon-caret {
         margin-top: 1px;
     }
+  
+    header .header__icons .disclosure .disclosure__button.active-desktop + ul {
+      display: block;
+    }
 }
 
 @media (min-width: 900px) {
