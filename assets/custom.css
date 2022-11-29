@@ -157,7 +157,7 @@ header .header__icons .disclosure .img-icon svg {
         padding: .5rem;
         top: 100%;
         margin-top: 8px;
-        border-top: 1px solid #8080809e;
+        border-top: 1px solid #E1E1E1;
     }
     
     header .header__icons.active-button {
