@@ -518,12 +518,12 @@
                                 
                                 <style>
                                   @media(min-width:900px) {
-                                      header .mega-menu__list li:nth-of-type({{ count-item }}) .two-column.list-unstyled li:nth-of-type({{ section.settings.max_length_items }}n) {
+                                      header .mega-menu__list li:nth-child({{ count-item }}) .two-column.list-unstyled li:nth-of-type({{ section.settings.max_length_items }}n) {
                                           -webkit-column-break-after: always;
                                           break-after: always;
                                       }
                                   
-                                      header .mega-menu__list li:nth-type-of({{ count-item }}) ul.two-column.list-unstyled {
+                                      header .mega-menu__list li:nth-child({{ count-item }}) ul.two-column.list-unstyled {
                                         -moz-column-count: {{ number_column_check }};
                                         -moz-column-gap: 20px;
                                         -webkit-column-count: {{ number_column_check }};
