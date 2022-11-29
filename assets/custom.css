@@ -134,6 +134,35 @@ header .header__icons .disclosure .img-icon svg {
       header .header__icons .disclosure .disclosure__list img, svg {
             width: 50px;
         }
+
+  header .header__icons .disclosure {
+        position: static;
+    }
+    
+    header .header__icons .disclosure .img-icon img {
+    object-position: left top;
+    object-fit: contain;
+}
+    
+    header .header__icons .disclosure .disclosure__button img {
+        width: 30px;
+    }
+    
+    header .header__icons .disclosure .img-icon svg {
+    width: 29px;
+        margin-right: 20px;
+}
+    
+    header .header__icons .disclosure .disclosure__button + ul {
+        padding: 1.5rem;
+        top: 100%;
+        margin-top: 8px;
+        border: 1px solid #8080809e;
+    }
+    
+    header .header__icons {
+        position: relative;
+    }
 }
 
 @media (min-width: 900px) {
