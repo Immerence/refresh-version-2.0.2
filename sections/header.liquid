@@ -165,7 +165,7 @@
                                           {{ childlink.title | escape }}
                                         </a>
                                       {%- else -%}
-                                        <details id="Details-menu-drawer-submenu-{{ forloop.index }}">
+                                        <ul id="Details-menu-drawer-submenu-{{ forloop.index }}" class="menu-child-two">
                                           <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
                                             {{ childlink.title | escape }}
                                             {% render 'icon-arrow' %}
