@@ -482,7 +482,10 @@
       {%- else -%}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
+          {% assign count-item-main-menu = 0 %}
             {%- for link in section.settings.menu.links -%}
+
+              {% assign count-item-main-menu =  count-item-main-menu | plus:1  %}
               <li>
                 {%- if link.links != blank -%}
                   <header-menu>
@@ -518,12 +521,12 @@
                                 
                                 <style>
                                   @media(min-width:900px) {
-                                      header .mega-menu__list li:nth-child({{ count-item }}) .two-column.list-unstyled li:nth-of-type({{ section.settings.max_length_items }}n) {
+                                      header .header__inline-menu .list-menu > li:nth-child{{ count-item-main-menu }} .mega-menu__list li:nth-child({{ count-item }}) .two-column.list-unstyled li:nth-of-type({{ section.settings.max_length_items }}n) {
                                           -webkit-column-break-after: always;
                                           break-after: always;
                                       }
                                   
-                                      header .mega-menu__list li:nth-child({{ count-item }}) ul.two-column.list-unstyled {
+                                      header .header__inline-menu .list-menu > li:nth-child{{ count-item-main-menu }} .mega-menu__list li:nth-child({{ count-item }}) ul.two-column.list-unstyled {
                                         -moz-column-count: {{ number_column_check }};
                                         -moz-column-gap: 20px;
                                         -webkit-column-count: {{ number_column_check }};
