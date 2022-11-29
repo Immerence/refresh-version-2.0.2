@@ -126,7 +126,7 @@ header .header__icons .disclosure .img-icon svg {
 
 @media (min-width: 900px) {
   
-      .header>.header__heading-link span{
+      .header .header__heading-link .h2{
         font-weight: 700;
         font-size: 24px;
         line-height: 29px;
