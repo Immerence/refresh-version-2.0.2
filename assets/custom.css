@@ -154,7 +154,7 @@ header .header__icons .disclosure .img-icon svg {
 }
     
     header .header__icons .disclosure .disclosure__button + ul {
-        padding: .5rem 1.5rem 0.8rem;
+        padding: 1.5rem 1.5rem 0.8rem;
         top: 100%;
         margin-top: 8px;
         border: 1px solid #8080809e;
