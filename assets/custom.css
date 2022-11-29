@@ -287,16 +287,16 @@ header .header__icons .disclosure .img-icon svg {
         transform: rotate(180deg);
     }
   
-    header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-opening > .menu-drawer__submenu {
+    header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-child > .menu-drawer__submenu {
         padding-left: 30px;
     }
   
-    header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-opening > .menu-drawer__submenu > .menu-drawer__menu {
+    header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-child > .menu-drawer__submenu > .menu-drawer__menu {
         margin-left: 25px;
         border-left: 1px solid #2222229e;
     }
   
-    header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-opening > .menu-drawer__submenu > .menu-drawer__menu a {
+    header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-child > .menu-drawer__submenu > .menu-drawer__menu a {
         padding-left: 15px;
     }
   
