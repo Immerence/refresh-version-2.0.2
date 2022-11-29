@@ -947,7 +947,7 @@ class ProductRecommendations extends HTMLElement {
 customElements.define('product-recommendations', ProductRecommendations);
 
 let buttonChangeLanguage = document.getElementsByClassName("disclosure__button");
-for (let i = 0; i < buttonChangeMobile.length; i++) {
+for (let i = 0; i < buttonChangeLanguage.length; i++) {
   buttonChangeLanguage[i].onclick = function(event) {
     this.classList.toggle('active-desktop');
   }
