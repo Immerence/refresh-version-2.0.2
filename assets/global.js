@@ -963,12 +963,18 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
   }
 }
 
-
+ 
 
 let buttonMenuItem = document.querySelector(".menu-mobile summary.menu-drawer__menu-item");
+let buttonMenuItemTwo = document.querySelector(".menu-mobile summary.menu-drawer__menu-item-two");
 let checkCurrentPages = document.querySelector("a.menu-drawer__menu-item--active");
 
 buttonMenuItem.onclick = function(event) { 
+	this.classList.toggle('active');
+  this.parentElement.classList.toggle('active');
+}
+
+buttonMenuItemTwo.onclick = function(event) { 
 	this.classList.toggle('active');
   this.parentElement.classList.toggle('active');
 }
