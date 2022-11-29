@@ -986,7 +986,7 @@ buttonMenuMobile.onclick = function(event) {
 }
 
 
-let buttonMenuItem = document.querySelector(". menu-drawer__menu-item");
+let buttonMenuItem = document.querySelector(".menu-mobile summary.menu-drawer__menu-item");
 let checkCurrentPages = document.querySelector("a.menu-drawer__menu-item--active");
 
 buttonMenuMobile.onclick = function(event) { 
