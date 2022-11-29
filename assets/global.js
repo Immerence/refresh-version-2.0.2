@@ -972,7 +972,7 @@ let checkCurrentPages = document.querySelector("a.menu-drawer__menu-item--active
 for (let i = 0; i < buttonMenuItems.length; i++) {
   buttonMenuItems[i].onclick = function(event) {
     this.classList.toggle('active');
-    this.nextSibling().toggle('test');
+    this.nextElementSibling .toggle('test');
     this.parentElement.classList.toggle('active');
   }
 }
