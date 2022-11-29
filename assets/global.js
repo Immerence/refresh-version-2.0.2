@@ -969,13 +969,13 @@ let buttonMenuItems = document.querySelectorAll(".menu-mobile summary.menu-drawe
 let buttonMenuItemTwo = document.querySelector(".menu-mobile summary.menu-drawer__menu-item-two");
 let checkCurrentPages = document.querySelector("a.menu-drawer__menu-item--active");
 
-
-buttonMenuItems.forEach(buttonMenuItem => {
-  buttonMenuItem.addEventListener('click', () => {
+for (let i = 0; i < buttonMenuItems.length; i++) {
+  buttonMenuItems[i].onclick = function(event) {
     this.classList.toggle('active');
     this.parentElement.classList.toggle('active');
- })
-})
+  }
+}
+
   
   
 
