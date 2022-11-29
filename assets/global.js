@@ -314,7 +314,6 @@ class MenuDrawer extends HTMLElement {
     const parentMenuElement = detailsElement.closest('.has-submenu');
     const isOpen = detailsElement.hasAttribute('open');
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const contentMenuItem = document.querySelector('details summary + .menu-drawer__submenu');
 
     function addTrapFocus() {
       trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
@@ -333,7 +332,6 @@ class MenuDrawer extends HTMLElement {
         detailsElement.classList.add('menu-opening');
         summaryElement.setAttribute('aria-expanded', true);
         parentMenuElement && parentMenuElement.classList.add('submenu-open');
-        contentMenuItem.slideDown();
         !reducedMotion || reducedMotion.matches ? addTrapFocus() : summaryElement.nextElementSibling.addEventListener('transitionend', addTrapFocus);
       }, 100);
     }
