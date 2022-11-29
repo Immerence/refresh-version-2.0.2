@@ -948,7 +948,7 @@ customElements.define('product-recommendations', ProductRecommendations);
 
 let buttonChangeLanguage = document.getElementsByClassName("disclosure__button");
 for (let i = 0; i < buttonChangeMobile.length; i++) {
-  buttonChangeMobile[i].onclick = function(event) {
+  buttonChangeLanguage[i].onclick = function(event) {
     this.classList.toggle('active-desktop');
   }
 }
