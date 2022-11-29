@@ -965,8 +965,8 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
 
  
 
-let buttonMenuItems = document.querySelectorAll(".menu-mobile summary.menu-drawer__menu-item");
-let buttonMenuItemTwo = document.querySelector(".menu-mobile summary.menu-drawer__menu-item-two");
+let buttonMenuItems = document.querySelectorAll(".menu-mobile div.menu-drawer__menu-item");
+let buttonMenuItemTwo = document.querySelector(".menu-mobile div.menu-drawer__menu-item-two");
 let checkCurrentPages = document.querySelector("a.menu-drawer__menu-item--active");
 
 for (let i = 0; i < buttonMenuItems.length; i++) {
