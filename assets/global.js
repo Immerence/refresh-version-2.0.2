@@ -947,9 +947,11 @@ class ProductRecommendations extends HTMLElement {
 customElements.define('product-recommendations', ProductRecommendations);
 
 let buttonChangeLanguage = document.getElementsByClassName("disclosure__button");
+let checkClickLocator = document.querySelector("header .header__icons");
 for (let i = 0; i < buttonChangeLanguage.length; i++) {
   buttonChangeLanguage[i].onclick = function(event) {
     this.classList.toggle('active-desktop');
+    checkClickLocator.classList.toggle('active-button');
   }
 }
 
