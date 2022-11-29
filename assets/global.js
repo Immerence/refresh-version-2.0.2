@@ -985,3 +985,17 @@ buttonMenuMobile.onclick = function(event) {
   
 }
 
+    let items = document
+        .querySelector(".header__inline-menu")
+        .querySelectorAll("details");
+    items.forEach((item) => {
+        item.addEventListener("mouseover", () => {
+            item.setAttribute("open", true);
+            item.querySelector("summary").setAttribute("aria-expanded", "true");
+            item.addEventListener("mouseout", () => {
+                item.removeAttribute("open");
+                item.querySelector("summary").setAttribute("aria-expanded", "false");
+            });
+        });
+    });
+
