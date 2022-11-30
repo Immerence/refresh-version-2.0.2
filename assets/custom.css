@@ -341,6 +341,10 @@ header .header__icons .disclosure .img-icon svg {
   header .disclosure.mobile .disclosure__button.active .disclosure__list > li .country-name {
   	margin-right: 5px;
   }
+  header .disclosure.mobile .disclosure__button.active .disclosure__list > li span {
+  	display: flex;
+    align-items: center;
+  }
   header .disclosure.mobile .disclosure__button p {
       flex-grow: 2;
       font-weight: 400;
