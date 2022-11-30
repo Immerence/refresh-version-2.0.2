@@ -211,7 +211,7 @@ header .header__icons .disclosure .img-icon svg {
 
 
 @media (max-width: 989px) {
-        .header .header__heading-link .h2{
+  .header .header__heading-link .h2{
         font-weight: 700;
         font-size: 24px;
         line-height: 29px;
@@ -416,6 +416,10 @@ header .header__icons .disclosure .img-icon svg {
   
   header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu li > div {
       visibility: visible;
+  }
+  
+  header .disclosure.mobile .disclosure__button.active svg {
+        transform: rotate(180deg);
   }
 }
 
