@@ -333,6 +333,13 @@ header .header__icons .disclosure .img-icon svg {
   header .disclosure.mobile .disclosure__button.active .disclosure__list {
       display: block;
   }
+  header .disclosure.mobile .disclosure__button.active .disclosure__list > li {
+  	display: flex;
+    align-items: center;
+  }
+  header .disclosure.mobile .disclosure__button.active .disclosure__list > li span {
+  	margin-right: 5px;
+  }
   header .disclosure.mobile .disclosure__button p {
       flex-grow: 2;
       font-weight: 400;
