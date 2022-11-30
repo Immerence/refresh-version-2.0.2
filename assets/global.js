@@ -968,8 +968,18 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
 let buttonMenuItems = document.querySelectorAll(".menu-mobile .menu-drawer__menu-item");
 let buttonMenuItemTwos = document.querySelectorAll(".menu-mobile .menu-drawer__navigation li.menu-levl");
 let buttonMenuItemThrees = document.querySelectorAll(".menu-mobile .menu-drawer__navigation li.menu-levl-two");
+let buttonMenuCheck = document.querySelector(.menu-mobile .menu-drawer__navigation li.active);
+
 for (let i = 0; i < buttonMenuItems.length; i++) {
   buttonMenuItems[i].onclick = function(event) {
+    if(buttonMenuCheck) {
+          if(this.closest('.menu-levl')) {
+      this.closest('.menu-levl-two').classList.remove('active');
+    }
+          if(this.closest('.menu-levl-two')) {
+      this.closest('.menu-levl-two').classList.remove('active');
+    }
+    } else {
     buttonMenuItemTwos.forEach(buttonMenuItemTwo => {
       buttonMenuItemTwo.classList.remove('active');
     });
@@ -985,6 +995,8 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
     this.classList.toggle('active');
     this.parentElement.classList.toggle('active');
     this.closest('li').classList.add('active');
+    }
+
   }
 }
 
