@@ -977,7 +977,7 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
 
 const wrapper = document.querySelector('.menu-mobile .menu-child')
 const content = document.querySelector('.menu-mobile .menu-drawer__submenu')
-const button = document.getElementById('.menu-mobile summary.menu-drawer__menu-item')
+const button = document.querySelector('.menu-mobile summary.menu-drawer__menu-item')
 let open = false
 
 // Set initial height to content height, if shown by default
