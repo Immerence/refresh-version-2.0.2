@@ -402,17 +402,20 @@ header .header__icons .disclosure .img-icon svg {
   header .menu-drawer-container .menu-drawer__submenu {
     opacity: 1;
     visibility: visible;
-    height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 1s; 
+    -moz-transition: max-height 1s; 
+    -ms-transition: max-height 1s; 
+    -o-transition: max-height 1s; 
+    transition: max-height 1s;  
+    background: #e5feff;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 2s ease-in-out;
+    
   }
   
   header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu {
-      height: auto;
       max-height: 5000px;
-        overflow: hidden;
-    transition: max-height 2s ease-out;
   }
   
   header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu li > div {
