@@ -972,11 +972,12 @@ let buttonMenuCheck = document.querySelector('.menu-mobile .menu-drawer__navigat
 
 for (let i = 0; i < buttonMenuItems.length; i++) {
   buttonMenuItems[i].onclick = function(event) {
-      if(this.closest('.menu-levl.active') || this.closest('.menu-levl-two.active')) {
+      if(this.closest('.menu-levl.active')) {
         this.closest('.menu-levl').classList.remove('active');
          this.closest('.menu-levl-two').classList.remove('active');
       } else {
-              buttonMenuItemTwos.forEach(buttonMenuItemTwo => {
+        
+      buttonMenuItemTwos.forEach(buttonMenuItemTwo => {
         buttonMenuItemTwo.classList.remove('active');
       });
       
