@@ -379,6 +379,24 @@ header .header__icons .disclosure .img-icon svg {
       width: 32px;
       height: 20px;
   }
+  
+  header .menu-drawer-container .menu-drawer__submenu {
+    opacity: 1;
+    visibility: visible;
+    height: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: 1s;
+}
+header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu {
+    height: auto;
+    max-height: 500px;
+    transition: 1s;
+}
+header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu li > div {
+    visibility: visible;
+}
+
 
 }
 
