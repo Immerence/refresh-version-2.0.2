@@ -971,7 +971,7 @@ let buttonMenuItemTwo = document.querySelector(".menu-mobile .menu-child");
 
 for (let i = 0; i < buttonMenuItems.length; i++) {
   buttonMenuItems[i].onclick = function(event) {
-    buttonMenuItem.classList.remove('active');
+    buttonMenuItems[i].classList.remove('active');
     buttonMenuItemTwo.classList.remove('active');
     this.classList.toggle('active');
     this.parentElement.classList.toggle('active');
