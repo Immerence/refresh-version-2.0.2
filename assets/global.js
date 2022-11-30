@@ -976,7 +976,10 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
     buttonMenuItemThrees.forEach(buttonMenuItemThree => {
       buttonMenuItemThree.classList.remove('active');
     });
-    this.closest('.menu-levl-two').classList.add('active');
+    if(this.closest('.menu-levl-two')) {
+      this.closest('.menu-levl-two').classList.add('active');
+    }
+    
     this.closest('.menu-levl').classList.add('active');
     this.classList.toggle('active');
     this.parentElement.classList.toggle('active');
