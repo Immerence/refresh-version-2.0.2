@@ -328,7 +328,7 @@ header .header__icons .disclosure .img-icon svg {
       position: relative;
       align-items: center;
       width: 100%;
-    padding: 5px 2.2rem;
+      padding: 5px 2.2rem;
   }
   header .disclosure.mobile .disclosure__button.active .disclosure__list {
       display: block;
@@ -337,6 +337,10 @@ header .header__icons .disclosure .img-icon svg {
   	display: flex;
     align-items: center;
     justify-content: flex-end;
+  }
+  
+  header .disclosure.mobile .disclosure__button.active .disclosure__list > li:not(:last-child) {
+  	margin-bottom: 10px;
   }
   header .disclosure.mobile .disclosure__button.active .disclosure__list > li .country-name {
   	margin-right: 5px;
