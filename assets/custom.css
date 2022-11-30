@@ -283,7 +283,7 @@ header .header__icons .disclosure .img-icon svg {
         display: block;
     }
   
-    header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-opening[open] > summary .icon-caret {
+    header .menu-drawer-container .menu-drawer__menu.has-submenu summary.active .icon-caret {
         transform: rotate(180deg);
     }
   
