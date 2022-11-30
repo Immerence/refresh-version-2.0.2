@@ -405,16 +405,16 @@ header .header__icons .disclosure .img-icon svg {
     overflow: hidden;
     max-height: 0;
     transition: 1s;
-}
-header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu {
-    height: auto;
-    max-height: 5000px;
-    transition: 1s;
-}
-header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu li > div {
-    visibility: visible;
-}
-
-
+  }
+  
+  header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu {
+      height: auto;
+      max-height: 5000px;
+      transition: 1s;
+  }
+  
+  header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu li > div {
+      visibility: visible;
+  }
 }
 
