@@ -972,9 +972,9 @@ let buttonMenuItemTwo = document.querySelector(".menu-mobile .menu-child li");
 for (let i = 0; i < buttonMenuItems.length; i++) {
   buttonMenuItems[i].onclick = function(event) {
     buttonMenuItemTwo.classList.remove('active');
-    this.classList.toggle('active');
-    this.parentElement.classList.toggle('active');
-    this.closest('li').classList.toggle('active');
+    this.classList.add('active');
+    this.parentElement.classList.add('active');
+    this.closest('li').classList.add('active');
   }
 }
 
