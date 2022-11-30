@@ -975,7 +975,7 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
       if(this.closest('.menu-levl.active')) {
         
          if(this.closest('.menu-levl-two.active')) {
-            this.closest('.menu-levl').classList.remove('active');
+            this.closest('.menu-levl-two').classList.remove('active');
          } else {
   
           if(this.closest('.menu-levl-two')) {
