@@ -983,7 +983,7 @@ let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active"
 
 buttonMenuMobile.onclick = function(event) {
   
-  if(checkCurrentPage.closest('details')) {
+  if(checkCurrentPage.closest('menu-child')) {
     checkCurrentPage.closest('.menu-child').classList.add("active");
   }
     
