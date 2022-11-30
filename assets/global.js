@@ -967,12 +967,16 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
 
 let buttonMenuItems = document.querySelectorAll(".menu-mobile .menu-drawer__menu-item");
 let buttonMenuItemTwos = document.querySelectorAll(".menu-mobile .menu-drawer__navigation li.menu-levl");
-
+let buttonMenuItemThrees = document.querySelectorAll(".menu-mobile .menu-drawer__navigation li.menu-levl-two");
 for (let i = 0; i < buttonMenuItems.length; i++) {
   buttonMenuItems[i].onclick = function(event) {
     buttonMenuItemTwos.forEach(buttonMenuItemTwo => {
       buttonMenuItemTwo.classList.remove('active');
     });
+    buttonMenuItemThrees.forEach(buttonMenuItemThree => {
+      buttonMenuItemThree.classList.remove('active');
+    });
+    this.closest('.menu-levl-two').classList.add('active');
     this.closest('.menu-levl').classList.add('active');
     this.classList.toggle('active');
     this.parentElement.classList.toggle('active');
