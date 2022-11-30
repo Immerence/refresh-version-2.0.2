@@ -975,6 +975,7 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
     buttonMenuItemTwo.classList.remove('active');
     this.classList.toggle('active');
     this.parentElement.classList.toggle('active');
+    this.closest('li').classList.toggle('active');
   }
 }
 
