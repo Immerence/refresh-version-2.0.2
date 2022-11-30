@@ -275,15 +275,15 @@ header .header__icons .disclosure .img-icon svg {
         display: none;
     }
   
-    header .menu-drawer-container .menu-drawer__menu.has-submenu summary .icon.icon-arrow {
+    header .menu-drawer-container .menu-drawer__menu.has-submenu .list-menu__item .icon.icon-arrow {
         display: none;
     }
   
-    header .menu-drawer-container .menu-drawer__menu.has-submenu summary .icon-caret {
+    header .menu-drawer-container .menu-drawer__menu.has-submenu .list-menu__item .icon-caret {
         display: block;
     }
   
-    header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-child.active > summary .icon-caret {
+    header .menu-drawer-container .menu-drawer__menu.has-submenu .menu-child.active > .list-menu__item .icon-caret {
         transform: rotate(180deg);
     }
   
