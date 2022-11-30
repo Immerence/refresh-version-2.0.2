@@ -976,17 +976,12 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
     buttonMenuItemThrees.forEach(buttonMenuItemThree => {
       buttonMenuItemThree.classList.remove('active');
     });
-    if(this.closest('.menu-levl').classList.contains('active')) {
-      this.closest('.menu-levl').classList.remove('active');
-      if(this.closest('.menu-levl-two')) {
-        this.closest('.menu-levl-two').classList.remove('active');
-      }
-    }
+
     if(this.closest('.menu-levl-two')) {
-      this.closest('.menu-levl-two').classList.add('active');
+      this.closest('.menu-levl-two').classList.toggle('active');
     }
     
-    this.closest('.menu-levl').classList.add('active');
+    this.closest('.menu-levl').classList.toggle('active');
     this.classList.toggle('active');
     this.parentElement.classList.toggle('active');
     this.closest('li').classList.add('active');
