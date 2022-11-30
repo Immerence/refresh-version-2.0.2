@@ -418,7 +418,7 @@ header .header__icons .disclosure .img-icon svg {
          transition:max-height 5s ease-out; 
   }
   
-  header .menu-drawer-container .menu-drawer__navigation li.active .menu-child > .menu-drawer__submenu li > div {
+  header .menu-drawer-container .menu-drawer__navigation li.active .menu-child > .menu-drawer__submenu > li > div {
       visibility: visible;
   }
   
