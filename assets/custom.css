@@ -410,7 +410,19 @@ header .header__icons .disclosure .img-icon svg {
     transition: max-height 1s;  
     overflow: hidden;
     max-height: 0;
-    
+  }
+
+    header .menu-drawer-container li.active .menu-drawer__submenu {
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s; 
+    -moz-transition: max-height 0.2s; 
+    -ms-transition: max-height 0.2s; 
+    -o-transition: max-height 0.2s; 
+    transition: max-height 0.2s;  
+    overflow: hidden;
+    max-height: 0;
   }
   
   header .menu-drawer-container .menu-drawer__navigation li.active > .menu-child > .menu-drawer__submenu {
