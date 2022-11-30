@@ -413,12 +413,12 @@ header .header__icons .disclosure .img-icon svg {
     
   }
   
-  header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu {
+  header .menu-drawer-container .menu-drawer__navigation li.active .menu-child.active > .menu-drawer__submenu {
       max-height: 5000px;
          transition:max-height 5s ease-out; 
   }
   
-  header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu li > div {
+  header .menu-drawer-container .menu-drawer__navigation li.active .menu-child.active > .menu-drawer__submenu li > div {
       visibility: visible;
   }
   
