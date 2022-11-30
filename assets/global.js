@@ -973,7 +973,7 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
     buttonMenuItemTwos.forEach(buttonMenuItemTwo => {
       buttonMenuItemTwo.classList.remove('active');
     });
-    buttonMenuItemTwo.classList.remove('active');
+    
     this.classList.toggle('active');
     this.parentElement.classList.toggle('active');
     this.closest('li').classList.add('active');
