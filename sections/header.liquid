@@ -150,7 +150,7 @@
                             <div id="headingOne{{forloop.index}}">
                               <div class="menu__toggle-head menu-drawer__menu-item accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{forloop.index}}" aria-expanded="{% if link.child_active %}true{% else %}false{% endif %}" aria-controls="collapseOne{{forloop.index}}">
                                 <div class="list-menu__item-title">{{ link.title | escape }}</div>
-                                <div class="list-menu__item-icon">{% render 'icon-arrow-down' %}{% render 'icon-caret' %}</div>
+                                <div class="list-menu__item-icon">{% render 'icon-caret' %}</div>
                               </div>
                             </div>
                             <div id="{{ parentID }}" class="menu__toggle-body accordion-collapse collapse {% if link.child_active %}show{% endif %}" aria-labelledby="headingOne{{forloop.index}}" data-bs-parent="#parentLink">
@@ -163,7 +163,7 @@
                                           <div class="menu-drawer__menu-item accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseOne{{forloop.index}}" aria-expanded="{% if child_link.child_active %}true{% else %}false{% endif %}" aria-controls="subCollapseOne{{forloop.index}}">
                                             <div class="list-menu__item-title">{{ child_link.title | escape }}</div>
                                             {%- if child_link.links != blank -%}
-                                              <div class="list-menu__item-icon">{% render 'icon-arrow-down' %}{% render 'icon-caret' %}</div>
+                                              <div class="list-menu__item-icon">{% render 'icon-caret' %}</div>
                                             {%- endif -%}
                                           </div>
                                         </div>
