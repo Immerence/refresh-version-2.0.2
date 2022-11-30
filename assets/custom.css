@@ -417,8 +417,17 @@ header .header__icons .disclosure .img-icon svg {
       max-height: 5000px;
          transition:max-height 5s ease-out; 
   }
+
+  header .menu-drawer-container .menu-drawer__navigation li.active li.active .menu-child > .menu-drawer__submenu {
+      max-height: 5000px;
+         transition:max-height 5s ease-out; 
+  }
   
   header .menu-drawer-container .menu-drawer__navigation li.active > .menu-child > .menu-drawer__submenu > li > div {
+      visibility: visible;
+  }
+
+    header .menu-drawer-container .menu-drawer__navigation li.active li.active > .menu-drawer__submenu > li > div {
       visibility: visible;
   }
   
