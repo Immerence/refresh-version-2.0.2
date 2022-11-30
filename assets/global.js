@@ -985,7 +985,10 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
     this.parentElement.classList.toggle('active');
     this.closest('li').classList.add('active');
     if(this.classList.contains('active')) {
-      this.classList.remove('active');
+      this.closest('.menu-levl').classList.remove('active');
+          if(this.closest('.menu-levl-two')) {
+      this.closest('.menu-levl-two').classList.remove('active');
+    }
     }
     
   }
