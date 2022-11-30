@@ -975,6 +975,8 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
       if(this.closest('.menu-levl.active')) {
         
          if(this.closest('.menu-levl-two.active')) {
+this.closest('.menu-levl').classList.remove('active');
+         }else {
                  buttonMenuItemTwos.forEach(buttonMenuItemTwo => {
         buttonMenuItemTwo.classList.remove('active');
       });
@@ -991,8 +993,8 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
       this.classList.toggle('active');
       this.parentElement.classList.toggle('active');
       this.closest('li').classList.add('active');
-         }else {
-           this.closest('.menu-levl').classList.remove('active');
+           
+           
          }
       } else {
         
