@@ -965,39 +965,39 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
 
  
 
-// let buttonMenuItems = document.querySelectorAll("");
-// let buttonMenuItemTwo = document.querySelector(".menu-mobile summary.menu-drawer__menu-item-two");
+let buttonMenuItems = document.querySelectorAll("");
+let buttonMenuItemTwo = document.querySelector(".menu-mobile summary.menu-drawer__menu-item-two");
 
-// for (let i = 0; i < buttonMenuItems.length; i++) {
-//   buttonMenuItems[i].onclick = function(event) {
-//     this.classList.toggle('active');
-//     this.parentElement.classList.toggle('active');
-//   }
-// }
-
-const wrapper = document.querySelector('.menu-mobile .menu-child')
-const content = document.querySelector('.menu-mobile .menu-drawer__submenu')
-const button = document.querySelector('.menu-mobile summary.menu-drawer__menu-item')
-let open = false
-
-// Set initial height to content height, if shown by default
-if (open) {
-  wrapper.style.height = `${content.getBoundingClientRect().height}px`
-}
-
-
-function toggleOpen () {
-  if (open) {
-      wrapper.style.height = '0px'
-      open = false
-  } else {
-    const height = content.getBoundingClientRect().height
-    wrapper.style.height = `${height}px`;
-    open = true
+for (let i = 0; i < buttonMenuItems.length; i++) {
+  buttonMenuItems[i].onclick = function(event) {
+    this.classList.toggle('active');
+    this.parentElement.classList.toggle('active');
   }
 }
 
-button.addEventListener('click', toggleOpen)
+// const wrapper = document.querySelector('.menu-mobile .menu-child')
+// const content = document.querySelector('.menu-mobile .menu-drawer__submenu')
+// const button = document.querySelector('.menu-mobile summary.menu-drawer__menu-item')
+// let open = false
+
+// // Set initial height to content height, if shown by default
+// if (open) {
+//   wrapper.style.height = `${content.getBoundingClientRect().height}px`
+// }
+
+
+// function toggleOpen () {
+//   if (open) {
+//       wrapper.style.height = '0px'
+//       open = false
+//   } else {
+//     const height = content.getBoundingClientRect().height
+//     wrapper.style.height = `${height}px`;
+//     open = true
+//   }
+// }
+
+// button.addEventListener('click', toggleOpen)
 
 let buttonMenuMobile = document.querySelector("#Details-menu-drawer-container .header__icon");
 let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active");
