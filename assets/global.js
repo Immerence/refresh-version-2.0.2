@@ -966,7 +966,7 @@ for (let i = 0; i < buttonChangeMobile.length; i++) {
  
 
 let buttonMenuItems = document.querySelectorAll(".menu-mobile .menu-drawer__menu-item");
-let buttonMenuItemTwos = document.querySelectorAll(".menu-mobile .menu-drawer__navigation > .list-menu > li");
+let buttonMenuItemTwos = document.querySelectorAll(".menu-mobile .menu-drawer__navigation li.menu-levl");
 
 for (let i = 0; i < buttonMenuItems.length; i++) {
   buttonMenuItems[i].onclick = function(event) {
