@@ -382,6 +382,7 @@ header .header__icons .disclosure .img-icon svg {
       width: 100%;
       min-height: auto;
   }
+  
   header .disclosure.mobile .disclosure__list a {
       color: #222;
       text-decoration: none;
