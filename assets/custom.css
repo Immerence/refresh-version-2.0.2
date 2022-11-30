@@ -328,6 +328,7 @@ header .header__icons .disclosure .img-icon svg {
       position: relative;
       align-items: center;
       width: 100%;
+    padding: 5px 2.2rem;
   }
   header .disclosure.mobile .disclosure__button.active .disclosure__list {
       display: block;
@@ -345,7 +346,7 @@ header .header__icons .disclosure .img-icon svg {
       top: auto;
       right: 0;
       text-align: right;
-      padding-right: 35px;
+      padding-right: 4.2rem;
       margin-bottom: 4px;
   }
   header .disclosure.mobile .disclosure__button[aria-expanded="true"] .icon {
