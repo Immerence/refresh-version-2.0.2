@@ -973,7 +973,11 @@ let buttonMenuCheck = document.querySelector('.menu-mobile .menu-drawer__navigat
 for (let i = 0; i < buttonMenuItems.length; i++) {
   buttonMenuItems[i].onclick = function(event) {
       if(this.closest('.menu-levl.active')) {
-        
+          if(this.closest('.menu-levl-two'){
+            this.closest('.menu-levl').classList.remove('active');
+          }else {
+            
+          }
          if(this.closest('.menu-levl-two.active')) {
             this.closest('.menu-levl-two').classList.remove('active');
          } else {
