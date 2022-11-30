@@ -403,12 +403,11 @@ header .header__icons .disclosure .img-icon svg {
     opacity: 1;
     visibility: visible;
     overflow: hidden;
-    -webkit-transition: max-height 1s; 
-    -moz-transition: max-height 1s; 
-    -ms-transition: max-height 1s; 
-    -o-transition: max-height 1s; 
-    transition: max-height 1s;  
-    background: #e5feff;
+    -webkit-transition: max-height 0.5s; 
+    -moz-transition: max-height 0.5s; 
+    -ms-transition: max-height 0.5s; 
+    -o-transition: max-height 0.5s; 
+    transition: max-height 0.5s;  
     overflow: hidden;
     max-height: 0;
     
@@ -416,6 +415,11 @@ header .header__icons .disclosure .img-icon svg {
   
   header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu {
       max-height: 5000px;
+        -webkit-transition: max-height 0.5s; 
+    -moz-transition: max-height 0.5s; 
+    -ms-transition: max-height 0.5s; 
+    -o-transition: max-height 0.5s; 
+    transition: max-height 0.5s;  
   }
   
   header .menu-drawer-container .menu-drawer__navigation .menu-child.active > .menu-drawer__submenu li > div {
