@@ -984,6 +984,10 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
     this.classList.toggle('active');
     this.parentElement.classList.toggle('active');
     this.closest('li').classList.add('active');
+    if(this.classList.contains('active')) {
+      this.classList.remove('active');
+    }
+    
   }
 }
 
