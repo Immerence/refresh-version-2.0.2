@@ -973,29 +973,8 @@ let buttonMenuCheck = document.querySelector('.menu-mobile .menu-drawer__navigat
 for (let i = 0; i < buttonMenuItems.length; i++) {
   buttonMenuItems[i].onclick = function(event) {
       if(this.closest('.menu-levl.active')) {
-        
-         if(this.closest('.menu-levl-two.active')) {
-this.closest('.menu-levl').classList.remove('active');
-         }else {
-                 buttonMenuItemTwos.forEach(buttonMenuItemTwo => {
-        buttonMenuItemTwo.classList.remove('active');
-      });
-      
-      buttonMenuItemThrees.forEach(buttonMenuItemThree => {
-        buttonMenuItemThree.classList.remove('active');
-      });
-  
-      if(this.closest('.menu-levl-two')) {
-        this.closest('.menu-levl-two').classList.toggle('active');
-      }
-      
-      this.closest('.menu-levl').classList.toggle('active');
-      this.classList.toggle('active');
-      this.parentElement.classList.toggle('active');
-      this.closest('li').classList.add('active');
-           
-           
-         }
+        this.closest('.menu-levl').classList.remove('active');
+
       } else {
         
       buttonMenuItemTwos.forEach(buttonMenuItemTwo => {
