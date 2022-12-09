@@ -1054,7 +1054,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.menu-levl .menu-drawer__submenu').slideUp('slow');
       };
       effectMenu();
-      $('.menu-levl').on('click', function() {
+      $('.menu-levl.active').on('click', function() {
         effectMenu();
         console.log($(this).children('.menu-drawer__submenu').html());
       });
