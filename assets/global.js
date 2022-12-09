@@ -1050,12 +1050,13 @@ document.addEventListener('DOMContentLoaded', function() {
     menus?.forEach((menu) => {
       menu.classList.add('active');
       const effectMenu = () => {
+        $('.menu-levl').addClass('active');
         $('.menu-levl .menu-drawer__submenu').slideUp('slow');
       };
       effectMenu();
-      menu.addEventListener('click', function() {
-        menu.classList.add('active');
+      $('.menu-levl').on('click', function() {
         effectMenu();
+        console.log($(this).children('.menu-drawer__submenu').html());
       });
     });
 });
