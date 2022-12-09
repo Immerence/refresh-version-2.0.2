@@ -1051,7 +1051,7 @@ document.addEventListener('DOMContentLoaded', function() {
       menu.classList.add('active');
       const effectMenu = () => {
         $('.menu-levl').addClass('active');
-        $('.menu-levl .menu-drawer__submenu').slideUp('slow');
+        $('.menu-levl .menu-drawer__submenu').slideUp('fast');
       };
       effectMenu();
       $('.menu-levl').on('click', function() {
