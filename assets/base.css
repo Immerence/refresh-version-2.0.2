@@ -2980,4 +2980,5 @@ details-disclosure > details {
   line-height: 28px !important;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  text-decoration: none!important;
 }
