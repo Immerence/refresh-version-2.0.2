@@ -2960,14 +2960,14 @@ details-disclosure > details {
 
 // Meowcart Ecommerce
 #shopify-section-header {
-  z-index: 5;
+  z-index: 5 !important;
 }
 
 .menu-drawer {
-  position: fixed;
-  top: 0;
-  lef: 0;
-  z-index: 5;
+  position: fixed !important;
+  top: 0 !important;
+  lef: 0 !important;
+  z-index: 5 !important;
 }
 
 
