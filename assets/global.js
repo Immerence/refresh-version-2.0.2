@@ -1074,8 +1074,8 @@ document.addEventListener('DOMContentLoaded', function() {
     menus?.forEach((menu) => {
       menu.classList.add('active');
       const effectMenu = () => {
-        $('.menu-levl').addClass('active');
-        $('.menu-levl .menu-drawer__submenu').slideUp('fast');
+        $('.menu-levl-two').addClass('active');
+        $('.menu-levl-two .menu-drawer__submenu').slideUp('fast');
       };
       effectMenu();
       /* $('.menu-levl').on('click', function(m) {
