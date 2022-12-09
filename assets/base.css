@@ -2972,6 +2972,7 @@ details-disclosure > details {
   left: 0 !important;
   z-index: 5 !important;
   height: 100% !important;
+  width: calc(100vw - 6rem) !important;
 }
 
 .menu-drawer__menu-item {
