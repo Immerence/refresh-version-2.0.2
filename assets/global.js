@@ -1043,30 +1043,20 @@ buttonMenuMobile.onclick = function(event) {
 
 
 
-/* $('.menu-levl').on('click', function() {
-  const child $(this).children('.menu-drawer__submenu');
-  if(child) {
-    $(this).classList.add('active');
-  }
-}); */
 
 // Add by Meowcart Ecommerce
-$(document).ready(function() {
-  $('.menu-levl').on('click', function() {
-    const child = $(this).children('.menu-drawer__submenu');
-    if(child) {
-      child.css('opacity', 1);
-      child.css('visibility', 'visible');
-      child.css('overflow', 'hidden');
-      child.css('max-height', '5000px')
-    }
-  });
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     const menus = document.querySelectorAll('.menu-levl');
     menus?.forEach((menu) => {
       menu.classList.add('active');
+      const effectMenu = () = > {
+        $('.menu-levl').children('.menu-drawer__submenu').slideUp('slow');
+        $('.menu-levl').on('click', function() {
+          const menuChild = $(this).children('.menu-drawer__submenu');
+          menuChild.slideDown('slow');
+        });
+      };
+      effectMenu();
       menu.addEventListener('click', function() {
         menu.classList.add('active');
       });
