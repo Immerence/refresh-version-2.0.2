@@ -1060,7 +1060,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }); */
       menu.querySelector('.menu-drawer__menu-item')?.addEventListener('click', function() {
         effectMenu();
-        console.log(this);
         if(menu.children[0].children[1].style[0] === 'display') {
           $(menu.children[0].children[1]).slideDown();
         }else {
@@ -1084,7 +1083,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }); */
       menu.querySelector('.menu-drawer__menu-item')?.addEventListener('click', function() {
         effectMenu();
-        console.log(this);
         if(menu.children[0].children[1].style[0] === 'display') {
           $(menu.children[0].children[1]).slideDown();
         }else {
