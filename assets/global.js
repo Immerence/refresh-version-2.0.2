@@ -1052,5 +1052,8 @@ buttonMenuMobile.onclick = function(event) {
 
 // Add by Meowcart Ecommerce
 $(document).ready(function() {
-  $('.menu-levl').children('.menu-drawer__submenu') && console.log($(this));
+  $('.menu-levl').on('click', function() {
+    const child = $(this).children('.menu-drawer__submenu');
+    console.log(child);
+  });
 });
