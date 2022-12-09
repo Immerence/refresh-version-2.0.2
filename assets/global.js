@@ -1050,7 +1050,7 @@ document.addEventListener('DOMContentLoaded', function() {
     menus?.forEach((menu) => {
       menu.classList.add('active');
       const effectMenu = () => {
-        $('.menu-levl').children('.menu-drawer__submenu').slideUp('slow');
+        $('.menu-levl .menu-drawer__submenu').slideUp('slow');
         $('.menu-levl').on('click', function() {
           const menuChild = $(this).children('.menu-drawer__submenu');
           menuChild.slideDown('slow');
