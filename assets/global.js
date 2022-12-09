@@ -1049,7 +1049,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const menus = document.querySelectorAll('.menu-levl');
     menus?.forEach((menu) => {
       menu.classList.add('active');
-      const effectMenu = () = > {
+      const effectMenu = () => {
         $('.menu-levl').children('.menu-drawer__submenu').slideUp('slow');
         $('.menu-levl').on('click', function() {
           const menuChild = $(this).children('.menu-drawer__submenu');
