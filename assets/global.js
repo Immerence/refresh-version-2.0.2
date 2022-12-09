@@ -1056,7 +1056,7 @@ document.addEventListener('DOMContentLoaded', function() {
       effectMenu();
       $('.menu-levl').on('click', function() {
         effectMenu();
-        console.log($(this))
+        console.log($(this).html())
       });
     });
 });
