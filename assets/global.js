@@ -1020,9 +1020,9 @@ for (let i = 0; i < buttonMenuItems.length; i++) {
 let buttonMenuMobile = document.querySelector("#Details-menu-drawer-container .header__icon");
 let checkCurrentPage = document.querySelector("a.menu-drawer__menu-item--active");
 
-buttonMenuMobile.onclick = function(event) {
+/* buttonMenuMobile.onclick = function(event) {
   
-  if(checkCurrentPage.closest('menu-child')) {
+  if(checkCurrentPage?.closest('menu-child')) {
     checkCurrentPage.closest('.menu-child').classList.add("active");
   }
     
@@ -1037,7 +1037,7 @@ buttonMenuMobile.onclick = function(event) {
   }
   
 }
-
+ */
   
   
 
