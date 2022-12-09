@@ -1058,7 +1058,7 @@ document.addEventListener('DOMContentLoaded', function() {
         effectMenu();
         $(m.delegateTarget.children[0].children[1]).slideDown();
       }); */
-      menu.querySelector('.menu-drawer__menu-item')?.addEventListener('DOMContentLoaded', function() {
+      menu.querySelector('.menu-drawer__menu-item')?.addEventListener('click', function() {
         effectMenu();
         console.log(this);
         /* if(this.children[0].children[1].style[0] === 'display') {
