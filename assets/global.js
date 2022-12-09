@@ -1054,6 +1054,11 @@ buttonMenuMobile.onclick = function(event) {
 $(document).ready(function() {
   $('.menu-levl').on('click', function() {
     const child = $(this).children('.menu-drawer__submenu');
-    console.log(child);
+    if(child) {
+      child.css('opacity', 1);
+      child.css('visibility', 'visible');
+      child.css('overflow', 'hidden');
+      child.css('max-height', '5000px')
+    }
   });
 });
