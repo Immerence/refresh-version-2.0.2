@@ -1056,11 +1056,6 @@ document.addEventListener('DOMContentLoaded', function() {
       menu.addEventListener('click', function() {
         menu.classList.add('active');
         effectMenu();
-        $('.menu-levl .menu-child').on('click', function() {
-          setTimeout(function() {
-          $(this).children('.menu-drawer__submenu').slideDown('slow');
-          }, 10);
-        });
       });
     });
 });
