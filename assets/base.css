@@ -2962,6 +2962,9 @@ details-disclosure > details {
 #shopify-section-header {
   z-index: 5 !important;
 }
+#shopify-section-announcement-bar {
+  z-index: 3 !important;
+}
 
 .menu-drawer {
   position: fixed !important;
