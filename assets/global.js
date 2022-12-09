@@ -1060,8 +1060,11 @@ document.addEventListener('DOMContentLoaded', function() {
       }); */
       menu.onclick = function() {
         effectMenu();
-        console.log(this.children[0].children[1].style[0]);
-        $(this.children[0].children[1]).slideToggle();
+        if(this.children[0].children[1].style[0] === 'display') {
+          $(this.children[0].children[1]).slideDown();
+        }else {
+          $(this.children[0].children[1]).slideUp();
+        }
       }
     });
 });
