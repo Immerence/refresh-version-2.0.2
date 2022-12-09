@@ -1069,5 +1069,29 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const menus = document.querySelectorAll('.menu-levl-two');
+    menus?.forEach((menu) => {
+      menu.classList.add('active');
+      const effectMenu = () => {
+        $('.menu-levl').addClass('active');
+        $('.menu-levl .menu-drawer__submenu').slideUp('fast');
+      };
+      effectMenu();
+      /* $('.menu-levl').on('click', function(m) {
+        effectMenu();
+        $(m.delegateTarget.children[0].children[1]).slideDown();
+      }); */
+      menu.querySelector('.menu-drawer__menu-item')?.addEventListener('click', function() {
+        effectMenu();
+        console.log(this);
+        if(menu.children[0].children[1].style[0] === 'display') {
+          $(menu.children[0].children[1]).slideDown();
+        }else {
+          $(menu.children[0].children[1]).slideUp();
+        }
+      });
+    });
+});
 
 
