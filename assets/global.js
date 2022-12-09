@@ -1043,9 +1043,11 @@ buttonMenuMobile.onclick = function(event) {
 
 
 
-$('.menu-levl').on('click', function() {
+/* $('.menu-levl').on('click', function() {
   const child $(this).children('.menu-drawer__submenu');
   if(child) {
     $(this).classList.add('active');
   }
-});
+}); */
+
+// Add by Meowcart Ecommerce
