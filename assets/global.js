@@ -1062,3 +1062,12 @@ $(document).ready(function() {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menus = document.querySelectorAll('.menu-levl');
+    menus?.forEach((menu) => {
+      menu.classList.add('active');
+    });
+});
+
+
