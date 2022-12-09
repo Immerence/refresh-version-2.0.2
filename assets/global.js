@@ -1055,6 +1055,10 @@ document.addEventListener('DOMContentLoaded', function() {
       effectMenu();
       menu.addEventListener('click', function() {
         menu.classList.add('active');
+        effectMenu();
+        $('.menu-levl').on('click', function() {
+          $(this).children('.menu-drawer__submenu').slideDown('slow');
+        });
       });
     });
 });
