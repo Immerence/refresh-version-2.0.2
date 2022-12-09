@@ -1054,9 +1054,9 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.menu-levl .menu-drawer__submenu').slideUp('fast');
       };
       effectMenu();
-      $('.menu-levl').on('click', function() {
+      $('.menu-levl').on('click', function(m) {
         effectMenu();
-        console.log($(this));
+        console.log(m);
       });
     });
 });
