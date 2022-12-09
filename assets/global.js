@@ -1060,7 +1060,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }); */
       menu.onclick = function() {
         effectMenu();
-        console.log(this.children[0].children[1].className)
+        console.log(this.children[0].children[1].style)
         $(this.children[0].children[1]).slideToggle();
       }
     });
