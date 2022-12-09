@@ -1060,11 +1060,12 @@ document.addEventListener('DOMContentLoaded', function() {
       }); */
       menu.querySelector('.menu-drawer__menu-item')?.addEventListener('DOMContentLoaded', function() {
         effectMenu();
-        if(this.children[0].children[1].style[0] === 'display') {
+        console.log(this);
+        /* if(this.children[0].children[1].style[0] === 'display') {
           $(this.children[0].children[1]).slideDown();
         }else {
           $(this.children[0].children[1]).slideUp();
-        }
+        } */
       });
     });
 });
