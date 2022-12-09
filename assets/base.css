@@ -2979,4 +2979,5 @@ details-disclosure > details {
   font-size: 14px !important;
   line-height: 28px !important;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
