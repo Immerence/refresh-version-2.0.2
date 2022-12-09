@@ -1058,7 +1058,9 @@ document.addEventListener('DOMContentLoaded', function() {
         effectMenu();
         $(m.delegateTarget.children[0].children[1]).slideDown();
       }); */
-      menu.onclick = function() {$(this.children[0].children[1]).slideDown()
+      menu.onclick = function() {
+        effectMenu();
+        $(this.children[0].children[1]).slideDown()
       }
     });
 });
