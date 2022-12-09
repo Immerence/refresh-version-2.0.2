@@ -1059,7 +1059,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $(m.delegateTarget.children[0].children[1]).slideDown();
       }); */
       menu.onclick = function() {
-        console.log(this);
+        console.log($(this));
       }
     });
 });
