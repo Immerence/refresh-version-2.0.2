@@ -1054,10 +1054,13 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.menu-levl .menu-drawer__submenu').slideUp('fast');
       };
       effectMenu();
-      $('.menu-levl').on('click', function(m) {
+      /* $('.menu-levl').on('click', function(m) {
         effectMenu();
         $(m.delegateTarget.children[0].children[1]).slideDown();
-      });
+      }); */
+      menu.onclick = function() {
+        console.log(this);
+      }
     });
 });
 
