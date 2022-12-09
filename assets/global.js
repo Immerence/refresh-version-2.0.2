@@ -1060,7 +1060,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }); */
       menu.onclick = function() {
         effectMenu();
-        $(this.children[0].children[1]).slideDown()
+        $(this.children[0].children[1]).slideToggle();
       }
     });
 });
