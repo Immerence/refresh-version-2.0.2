@@ -1051,10 +1051,6 @@ document.addEventListener('DOMContentLoaded', function() {
       menu.classList.add('active');
       const effectMenu = () => {
         $('.menu-levl .menu-drawer__submenu').slideUp('slow');
-        $('.menu-levl').on('click', function() {
-          const menuChild = $(this).children('.menu-drawer__submenu');
-          menuChild.slideDown('slow');
-        });
       };
       effectMenu();
       menu.addEventListener('click', function() {
