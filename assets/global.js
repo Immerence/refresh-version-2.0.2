@@ -1051,3 +1051,6 @@ buttonMenuMobile.onclick = function(event) {
 }); */
 
 // Add by Meowcart Ecommerce
+$(document).ready(function() {
+  $('.menu-levl').children('.menu-drawer__submenu') && console.log('HELLO WORLD!');
+});
